@@ -8,9 +8,9 @@ class Animal:
     def voice(self):
         pass
 
-
-def printNum():
-    print("Столько - ", Animal.num)
+    @staticmethod
+    def printNum():
+        print("Количество животных - ", Animal.num)
 
 class Dog(Animal):
     def voice(self):
@@ -39,4 +39,4 @@ sova.voice()
 lev = Lev('Лев')
 lev.voice()
 
-printNum()
+Animal.printNum()
