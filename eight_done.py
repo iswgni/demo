@@ -1,4 +1,3 @@
-import pickle
 
 with open("test1.txt", 'r') as f:
     lines = f.readlines()
@@ -11,3 +10,5 @@ f3 = open('test2.txt', 'r')
 f4 = open('test1.txt', 'r')
 print(f4.read())
 print(f3.read())
+f3.close()
+f4.close()
